@@ -5,7 +5,7 @@ import './App.css';
 const App = () => {
 
   const APP_ID = '3f4766d3';
-  const APP_KEY = '8ce7f8a6293a26260d9ee2db4ac7fa0d';
+  const APP_KEY = '';
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
@@ -49,6 +49,7 @@ const App = () => {
           calories={recipe.recipe.calories} 
           image={recipe.recipe.image}
           ingredients={recipe.recipe.ingredients}
+          url={recipe.recipe.url}
           />
         ))}
       </div>
